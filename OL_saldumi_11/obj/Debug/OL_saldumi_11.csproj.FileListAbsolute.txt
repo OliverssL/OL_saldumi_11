@@ -1,0 +1,10 @@
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csprojAssemblyReference.cache
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.Form1.resources
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.Properties.Resources.resources
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csproj.GenerateResource.cache
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csproj.CoreCompileInputs.cache
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.exe.config
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.exe
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.pdb
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.exe
+Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.pdb
