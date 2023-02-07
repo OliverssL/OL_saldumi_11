@@ -92,5 +92,41 @@
   <ItemGroup>
     <None Include="Resources\pngimg.com - buttons_PNG168.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - buttons_PNG1681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41iReu9ClLL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41iReu9ClLL1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_123780206-stock-photo-top-view-of-black-calculator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-544462430-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-544462430-612x6121.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

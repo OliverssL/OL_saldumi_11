@@ -12,6 +12,14 @@ namespace OL_saldumi_11
 {
     public partial class Form1 : Form
     {
+        double sk1 = 0;
+        double cena1 = 0;
+        double cena2 = 0;
+        double cena3 = 0;
+        double cena4 = 0;
+        double cena5 = 0;
+        double cena = 0;
+        double skaits = 0;
         public Form1()
         {
             InitializeComponent();
@@ -34,10 +42,9 @@ namespace OL_saldumi_11
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double sk1 = Convert.ToDouble(Eiro.Text);
-            double sk2 = 9.88;
-            double rezultats = sk1 / sk2;
-            textBox1.Text = rezultats.ToString();
+            sk1 = Convert.ToDouble(Eiro.Text);
+            cena = (cena1 + cena2 + cena3 + cena4 + cena5) / skaits;
+            textBox1.Text = (sk1/cena).ToString();//izvada rezultatu textBox1 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -46,6 +53,72 @@ namespace OL_saldumi_11
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void Migle_CheckedChanged(object sender, EventArgs e)
+        {
+            if(Migle.Checked == true)
+            {
+                cena2 = 7.49;
+                skaits = skaits + 1;
+            }
+            else 
+            {
+                cena1 = 9.88;
+            }
+        }
+
+        private void Rudzupuķe_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rudzupuķe.Checked == true)
+            {
+                cena3 = 12.19;
+                skaits = skaits + 1;
+            }
+            else
+            {
+                cena1 = 9.88;
+            }
+
+        }
+
+        private void Serenāde_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Serenāde.Checked == true)
+            {
+                cena4 = 16.99;
+                skaits = skaits + 1;
+            }
+            else
+            {
+                cena1 = 9.88;
+            }
+        }
+
+        private void Gotiņa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Gotiņa.Checked == true)
+            {
+                cena5 = 10.69;
+                skaits = skaits + 1;
+            }
+            else
+            {
+                cena1 = 9.88;
+            }
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
