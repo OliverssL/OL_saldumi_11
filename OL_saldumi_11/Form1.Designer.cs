@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.Eiro = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,53 +40,36 @@
             this.Gotiņa = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Eiro
             // 
             this.Eiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Eiro.Location = new System.Drawing.Point(312, 175);
+            this.Eiro.Location = new System.Drawing.Point(255, 94);
             this.Eiro.Name = "Eiro";
             this.Eiro.Size = new System.Drawing.Size(192, 24);
             this.Eiro.TabIndex = 1;
             this.Eiro.TextChanged += new System.EventHandler(this.Eiro_TextChanged);
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.textBox2.Location = new System.Drawing.Point(312, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 24);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "9.88";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label2.Location = new System.Drawing.Point(155, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "1E kg cena";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label3.Location = new System.Drawing.Point(42, 174);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label3.Location = new System.Drawing.Point(42, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 24);
+            this.label3.Size = new System.Drawing.Size(182, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ievadiet naudas daudzumu";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.textBox1.Location = new System.Drawing.Point(312, 334);
+            this.textBox1.Location = new System.Drawing.Point(312, 346);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(249, 62);
             this.textBox1.TabIndex = 6;
@@ -132,7 +113,7 @@
             // 
             this.Migle.AutoSize = true;
             this.Migle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Migle.Location = new System.Drawing.Point(603, 193);
+            this.Migle.Location = new System.Drawing.Point(45, 248);
             this.Migle.Name = "Migle";
             this.Migle.Size = new System.Drawing.Size(118, 20);
             this.Migle.TabIndex = 10;
@@ -144,7 +125,7 @@
             // 
             this.Rudzupuķe.AutoSize = true;
             this.Rudzupuķe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Rudzupuķe.Location = new System.Drawing.Point(593, 96);
+            this.Rudzupuķe.Location = new System.Drawing.Point(45, 163);
             this.Rudzupuķe.Name = "Rudzupuķe";
             this.Rudzupuķe.Size = new System.Drawing.Size(157, 20);
             this.Rudzupuķe.TabIndex = 11;
@@ -156,7 +137,7 @@
             // 
             this.Serenāde.AutoSize = true;
             this.Serenāde.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Serenāde.Location = new System.Drawing.Point(593, 140);
+            this.Serenāde.Location = new System.Drawing.Point(45, 205);
             this.Serenāde.Name = "Serenāde";
             this.Serenāde.Size = new System.Drawing.Size(149, 20);
             this.Serenāde.TabIndex = 12;
@@ -168,7 +149,7 @@
             // 
             this.Gotiņa.AutoSize = true;
             this.Gotiņa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.Gotiņa.Location = new System.Drawing.Point(819, 122);
+            this.Gotiņa.Location = new System.Drawing.Point(45, 125);
             this.Gotiņa.Name = "Gotiņa";
             this.Gotiņa.Size = new System.Drawing.Size(128, 20);
             this.Gotiņa.TabIndex = 13;
@@ -178,9 +159,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(284, 303);
+            this.pictureBox1.BackgroundImage = global::OL_saldumi_11.Properties.Resources.istockphoto_544462430_612x6121;
+            this.pictureBox1.Location = new System.Drawing.Point(284, 316);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 113);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -189,20 +171,56 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Image = global::OL_saldumi_11.Properties.Resources.pngimg_com___buttons_PNG168;
-            this.button1.Location = new System.Drawing.Point(312, 205);
+            this.button1.Location = new System.Drawing.Point(46, 292);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 78);
+            this.button1.Size = new System.Drawing.Size(117, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Aprekinat";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(255, 163);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(192, 20);
+            this.textBox2.TabIndex = 15;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(255, 205);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(192, 20);
+            this.textBox3.TabIndex = 16;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(255, 247);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(192, 20);
+            this.textBox4.TabIndex = 17;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(255, 124);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(192, 20);
+            this.textBox5.TabIndex = 18;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(815, 441);
+            this.ClientSize = new System.Drawing.Size(1217, 574);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Gotiņa);
@@ -213,8 +231,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Eiro);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
@@ -233,8 +249,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Eiro;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
@@ -245,6 +259,10 @@
         private System.Windows.Forms.CheckBox Serenāde;
         private System.Windows.Forms.CheckBox Gotiņa;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 

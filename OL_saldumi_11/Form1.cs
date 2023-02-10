@@ -39,15 +39,22 @@ namespace OL_saldumi_11
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
+        { try
+            {
+                sk1 = Convert.ToDouble(Eiro.Text);
+                cena = (cena1 + cena2 + cena3 + cena4 + cena5) / skaits;
+                textBox1.Text = (sk1 / cena).ToString();//izvada rezultatu textBox1 
+            }
+    
+        catch(Exception ex)
         {
-            sk1 = Convert.ToDouble(Eiro.Text);
-            cena = (cena1 + cena2 + cena3 + cena4 + cena5) / skaits;
-            textBox1.Text = (sk1/cena).ToString();//izvada rezultatu textBox1 
+                MessageBox.Show("Nebija ievadīti korekti dati");
+                MessageBox.Show(ex.Message);
+        }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -66,7 +73,7 @@ namespace OL_saldumi_11
 
         private void Migle_CheckedChanged(object sender, EventArgs e)
         {
-            if(Migle.Checked == true)
+            if (Migle.Checked == true)
             {
                 cena2 = 7.49;
                 skaits = skaits + 1;
@@ -121,6 +128,31 @@ namespace OL_saldumi_11
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            textBox4.Text = (sk1 / cena2).ToString();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.Text = (cena4 / skaits).ToString();
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            textBox2.Text = (cena3 / skaits).ToString();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Text = (cena5 / skaits).ToString();
         }
     }
 }
