@@ -7,11 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace OL_saldumi_11
 {
     public partial class Form1 : Form
     {
+        double cena6 = 0;
+        double cena7 = 0;
+        double cena8 = 0;
+        double cena0 = 0;
+        double kg1 = 0;
+        double kg2 = 0;
+        double kg3 = 0;
+        double kg4 = 0;
         double sk1 = 0;
         double cena1 = 0;
         double cena2 = 0;
@@ -20,6 +29,8 @@ namespace OL_saldumi_11
         double cena5 = 0;
         double cena = 0;
         double skaits = 0;
+        private string filepath;
+
         public Form1()
         {
             InitializeComponent();
@@ -72,58 +83,96 @@ private void textBox1_TextChanged(object sender, EventArgs e)
         }
 
         private void Migle_CheckedChanged(object sender, EventArgs e)
-        {
-            if (Migle.Checked == true)
+        {try
             {
-                cena2 = 7.49;
-                skaits = skaits + 1;
+                if (Migle.Checked == true)
+                {
+                    cena2 = 7.49;
+                    skaits = skaits + 1;
+                    kg1 = Convert.ToDouble(textBox4.Text);
+                    cena8 = kg1 * cena2;
+                }
+                else
+                {
+                    cena1 = 9.88;
+                }
             }
-            else 
+            catch (Exception ex)
             {
-                cena1 = 9.88;
+                MessageBox.Show("Nebija ievadīti korekti dati");
+                MessageBox.Show(ex.Message);
             }
-        }
+
+            }
 
         private void Rudzupuķe_CheckedChanged(object sender, EventArgs e)
         {
-            if (Rudzupuķe.Checked == true)
+            try
             {
-                cena3 = 12.19;
-                skaits = skaits + 1;
+                if (Rudzupuķe.Checked == true)
+                {
+                    cena3 = 12.19;
+                    skaits = skaits + 1;
+                    kg2 = Convert.ToDouble(textBox2.Text);
+                    cena7 = kg2 * cena3;
+                }
+                else
+                {
+                    cena1 = 9.88;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                cena1 = 9.88;
+                MessageBox.Show("Nebija ievadīti korekti dati");
+                MessageBox.Show(ex.Message);
             }
-
-        }
+            }
 
         private void Serenāde_CheckedChanged(object sender, EventArgs e)
-        {
-            if (Serenāde.Checked == true)
+        {try
             {
-                cena4 = 16.99;
-                skaits = skaits + 1;
+                if (Serenāde.Checked == true)
+                {
+                    cena3 = 16.99;
+                    skaits = skaits + 1;
+                    kg3 = Convert.ToDouble(textBox3.Text);
+                    cena5 = kg3 * cena3;
+                }
+                else
+                {
+                    cena1 = 9.88;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                cena1 = 9.88;
+                MessageBox.Show("Nebija ievadīti korekti dati");
+                MessageBox.Show(ex.Message);
             }
-        }
+            }
 
         private void Gotiņa_CheckedChanged(object sender, EventArgs e)
         {
-            if (Gotiņa.Checked == true)
+            try
             {
-                cena5 = 10.69;
-                skaits = skaits + 1;
+                if (Gotiņa.Checked == true)
+                {
+                    cena4 = 10.69;
+                    skaits = skaits + 1;
+                    kg4 = Convert.ToDouble(textBox5.Text);
+                    cena6 = kg4 * cena5;
+                }
+                else
+                {
+                    cena1 = 9.88;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                cena1 = 9.88;
+                MessageBox.Show("Nebija ievadīti korekti dati");
+                MessageBox.Show(ex.Message);
             }
 
-        }
+            }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -137,22 +186,53 @@ private void textBox1_TextChanged(object sender, EventArgs e)
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            textBox4.Text = (sk1 / cena2).ToString();
+           
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            textBox3.Text = (cena4 / skaits).ToString();
+            
         }
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
-            textBox2.Text = (cena3 / skaits).ToString();
+            
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            textBox5.Text = (cena5 / skaits).ToString();
+        
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            { 
+            string vards = this.textBox6.Text;
+            string kg = this.textBox1.Text;
+            string failanosaukums = vards + "_" + DateTime.Now.ToString("ddMMyyyy") + "_ceks.txt";
+            StreamWriter musu_faila_ierakstitajs = new StreamWriter(failanosaukums);
+            musu_faila_ierakstitajs.WriteLine(vards);
+            musu_faila_ierakstitajs.WriteLine(kg);
+            musu_faila_ierakstitajs.Close();
+            }
+            if (File.Exists(filepath))
+                {
+            }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
