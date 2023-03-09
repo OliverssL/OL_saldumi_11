@@ -8,3 +8,13 @@ Z:\Programešana\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.exe
 Z:\Programešana\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.pdb
 Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.exe
 Z:\Programešana\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.pdb
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.exe.config
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.exe
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\bin\Debug\OL_saldumi_11.pdb
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csproj.AssemblyReference.cache
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.Form1.resources
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.Properties.Resources.resources
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csproj.GenerateResource.cache
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.csproj.CoreCompileInputs.cache
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.exe
+C:\Users\olive\OneDrive\Dators\OL_saldumi_11\OL_saldumi_11\obj\Debug\OL_saldumi_11.pdb

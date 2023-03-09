@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace OL_saldumi_11
 {
     public partial class Form1 : Form
@@ -31,6 +32,7 @@ namespace OL_saldumi_11
         double skaits = 0;
         private string filepath;
 
+
         public Form1()
         {
             InitializeComponent();
@@ -51,29 +53,30 @@ namespace OL_saldumi_11
 
         }
         private void button1_Click(object sender, EventArgs e)
-        { try
+        {
+            try
             {
                 sk1 = Convert.ToDouble(Eiro.Text);
                 cena = (cena1 + cena2 + cena3 + cena4 + cena5) / skaits;
-                textBox1.Text = (sk1 / cena).ToString();//izvada rezultatu textBox1 
+                textBox1.Text = (sk1 / cena).ToString(); //izvada rezultatu textBox1 
 
+                nauda1.Text = (kg4 * cena5).ToString();
+                textBox10.Text = (kg2 * cena3).ToString();
+                nauda2.Text = (kg3 * cena4).ToString();
+                nauda3.Text = (kg1 * cena2).ToString();
+                atlikums.Text = (sk1 - cena).ToString();
 
+                if (sk1 - cena < 0) // pārbauda, ​​vai atlikums ir mazāks par 0
+                {
+                    MessageBox.Show("Nav pietiekami daudz naudas!"); // izvada uz ekrana paziņojumu ja nepietiek naudas
+                }
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show("Nebija ievadīti korekti dati");
                 MessageBox.Show(ex.Message);
             }
-            nauda1.Text = (kg4 * cena5).ToString();
-            textBox10.Text = (kg2 * cena3).ToString();
-            nauda2.Text = (kg3 * cena4).ToString();
-            nauda3.Text = (kg1 * cena2).ToString();
-            atlikums.Text = (sk1 - cena).ToString();
         }
-
-
-
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -93,7 +96,8 @@ namespace OL_saldumi_11
         }
 
         private void Migle_CheckedChanged(object sender, EventArgs e)
-        { try
+        {
+            try
             {
                 if (Migle.Checked == true)
                 {
@@ -109,22 +113,29 @@ namespace OL_saldumi_11
             }
         }
 
+
+
+
+
+
         private void Rudzupuķe_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
                 if (Rudzupuķe.Checked == true)
+                {
                     cena3 = 12.19;
-                skaits = skaits + 1;
-                kg2 = Convert.ToDouble(textBox2.Text);
-                cena7 = kg2 * cena3;
-
+                    skaits = skaits + 1;
+                    kg2 = Convert.ToDouble(textBox2.Text);
+                    cena7 = kg2 * cena3;
+                }
             }
             catch
             {
                 MessageBox.Show("Nebija ievadīti korekti dati");
             }
         }
+
 
         private void Serenāde_CheckedChanged(object sender, EventArgs e)
         { try
@@ -166,7 +177,9 @@ namespace OL_saldumi_11
         }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+           
         }
+
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
         }
@@ -182,43 +195,63 @@ namespace OL_saldumi_11
         private void button2_Click(object sender, EventArgs e)
         {
             {
+                string daudzums = "";
+                string candy = "";
+                if (Rudzupuķe.Checked == true)
+                {
+                    candy = "Rudzupuķe";
+                    daudzums = kg2.ToString();
+                }
+                else if (Gotiņa.Checked == true)
+                {
+                    candy = "Gotiņa";
+                    daudzums = kg4.ToString();
+                }
+                else if (Serenāde.Checked == true)
+                {
+                    candy = "Serenāde";
+                    daudzums = kg3.ToString();
+                }
+                else if (Migle.Checked == true)
+                {
+                    candy = "Migle";
+                    daudzums = kg1.ToString();
+                }          
+        
                 string vards = this.textBox6.Text;
                 string kg = this.textBox1.Text;
                 string failanosaukums = vards + "_" + DateTime.Now.ToString("ddMMyyyy") + "_ceks.txt";
                 StreamWriter musu_faila_ierakstitajs = new StreamWriter(failanosaukums);
                 musu_faila_ierakstitajs.WriteLine(vards);
-                musu_faila_ierakstitajs.WriteLine(kg);
+                musu_faila_ierakstitajs.WriteLine("Kopā EUR:" + sk1);
+                musu_faila_ierakstitajs.WriteLine("Konfekte: " + candy);
+                musu_faila_ierakstitajs.WriteLine("Izvēlētais Daudzums: " + daudzums);
+                musu_faila_ierakstitajs.WriteLine("Svars: " + kg + " kg");
+                musu_faila_ierakstitajs.WriteLine("Atlikums:" + atlikums.Text);
                 musu_faila_ierakstitajs.Close();
             }
         }
-
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
         }
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
         }
-
         private void label2_Click_2(object sender, EventArgs e)
         {
-
         }
-
         private void atlikums_TextChanged(object sender, EventArgs e)
         {
-            
         }
-
-
-private void nauda1_TextChanged(object sender, EventArgs e)
+        private void nauda1_TextChanged(object sender, EventArgs e)
         {
-            
             string cena = this.nauda1.Text;
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
             string cena = this.textBox10.Text;
+            
         }
 
         private void nauda2_TextChanged(object sender, EventArgs e)
